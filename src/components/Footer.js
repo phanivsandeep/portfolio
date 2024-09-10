@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, Phone, Linkedin, Github } from 'lucide-react';
+import { Mail, Phone, Linkedin, Github, Instagram, Facebook, Gamepad2 } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -28,6 +28,18 @@ const Footer = () => {
             <a href="https://github.com/phanivsandeep" target="_blank" rel="noopener noreferrer" className="flex items-center hover:text-gray-300">
               <Github size={20} className="mr-2" />
               phanivsandeep
+            </a>
+            <a href="https://www.instagram.com/phanivsandeep" target="_blank" rel="noopener noreferrer" className="flex items-center mb-2 md:mb-0 hover:text-gray-300">
+              <Instagram size={20} className="mr-2" />
+              phanivsandeep
+            </a>
+
+            <a href="https://www.facebook.com/chodavarapu.phanisandeep/" target="_blank" rel="noopener noreferrer" className="flex items-center mb-2 md:mb-0 hover:text-gray-300">
+              <Facebook size={20} className="mr-2" />
+              Phani Sandeep Chodavarapu
+            </a>
+            <a href="https://steamcommunity.com/id/phanivsandeep/" target="_blank" rel="noopener noreferrer" className="flex items-center mb-2 md:mb-0 hover:text-gray-300">
+              <Gamepad2 size={20} className="mr-2" />
             </a>
           </div>
         </div>

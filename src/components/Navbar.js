@@ -53,14 +53,13 @@ const Navbar = ({ setActiveSection }) => {
       </div>
 
       {/* Mobile Menu Overlay */}
-      <div className={`fixed inset-0 bg-gray-800 bg-opacity-90 transition-transform transform ${menuOpen ? 'translate-x-0' : '-translate-x-full'} md:hidden`}>
+        <div className={`fixed inset-0 bg-gray-800 bg-opacity-90 transition-transform transform ${menuOpen ? 'translate-x-0' : '-translate-x-full'} md:hidden`}>
         <div className="flex flex-col p-8 space-y-8 text-center">
           <button onClick={() => { setActiveSection('projects'); setMenuOpen(false); }} className="hover:text-gray-300 text-2xl">Projects</button>
           <button onClick={() => { setActiveSection('experience'); setMenuOpen(false); }} className="hover:text-gray-300 text-2xl">Experience</button>
           <button onClick={() => { setActiveSection('skills'); setMenuOpen(false); }} className="hover:text-gray-300 text-2xl">Skills</button>
           <button onClick={() => { setActiveSection('education'); setMenuOpen(false); }} className="hover:text-gray-300 text-2xl">Education</button>
           <button onClick={() => { setActiveSection('certifications'); setMenuOpen(false); }} className="hover:text-gray-300 text-2xl">Certifications & Achievements</button>
-
           {/* Icons in mobile menu */}
           <div className="flex justify-center space-x-4 mt-8">
             <a href="/resume.pdf" download className="hover:text-gray-300" >

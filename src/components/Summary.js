@@ -2,7 +2,7 @@ import React from 'react';
 
 const Summary = () => {
   return (
-    <section className="flex flex-col items-center justify-center h-screen bg-gray-100 text-center p-8">
+    <section className="bg-gray-100 text-center mb-12">
       <h1 className="text-5xl font-bold mb-4">Phani Visweswara Sandeep Chodavarapu</h1>
       <p className="text-xl mb-6">
         M.S. Computer Science graduate student at the University at Buffalo, passionate about Full-Stack Development, Machine Learning, and Data Analysis. With a solid foundation in cutting-edge technologies, I excel at developing scalable solutions that drive business growth and solve real-world problems.
