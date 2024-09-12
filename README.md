@@ -1,4 +1,4 @@
-Portofolio Repository of Phani Visweswara Sandeep Ch
+Portfolio Repository of Phani Visweswara Sandeep Ch
 
 Email: phanivis@buffalo.edu
 Linkedin profile: [Phani V Sandeep's LinkedIn](https://www.linkedin.com/in/phanivsandeep/)
