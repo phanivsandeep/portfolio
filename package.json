@@ -1,8 +1,8 @@
 {
-  "name": "pvs-portifolio",
+  "name": "pvs-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://phanivsandeep.github.io/portifolio",
+  "homepage": "https://phanivsandeep.github.io/portfolio",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
