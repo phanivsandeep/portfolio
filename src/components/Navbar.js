@@ -21,8 +21,8 @@ const Navbar = ({ setActiveSection }) => {
         </div>
         <div className="hidden md:flex space-x-4">
         <div className="relative group">
-            <a href="/resume.pdf" download className="hover:text-gray-300" data-tooltip-target="tooltip-animation">
-              <Download size={40} />
+        <a href="https://raw.githubusercontent.com/phanivsandeep/portfolio/main/public/resume.pdf" download className="hover:text-gray-300">
+        <Download size={40} />
             </a>
             {/* Tooltip */}
             <div id="tooltip-animation" role="tooltip" className="absolute z-10 invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-opacity bg-blue-700 text-white text-sm rounded-lg p-2.5 shadow-lg">
