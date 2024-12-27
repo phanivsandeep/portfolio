@@ -62,8 +62,8 @@ const Navbar = ({ setActiveSection }) => {
           <button onClick={() => { setActiveSection('certifications'); setMenuOpen(false); }} className="hover:text-gray-300 text-2xl">Certifications & Achievements</button>
           {/* Icons in mobile menu */}
           <div className="flex justify-center space-x-4 mt-8">
-            <a href="/resume.pdf" download className="hover:text-gray-300" >
-              <Download size={40} />
+          <a href="https://raw.githubusercontent.com/phanivsandeep/portfolio/main/public/resume.pdf" download className="hover:text-gray-300">
+          <Download size={40} />
             </a>
             
             <a href="tel:+7166120738" className="hover:text-gray-300">

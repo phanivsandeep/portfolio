@@ -16,13 +16,29 @@ const ExperienceItem = ({ title, company, date, location, description }) => (
 const Experience = () => {
   const experiences = [
     {
+      title: "Full Stack Web Developer(Co-op)",
+      company: "Kaleida Health",
+      date: "August 2024 - Present",
+      location: "Buffalo, New York",
+      description: [
+        "Designed and deployed multi-tiered applications with high availability and fault-tolerant features on AWS.",
+        "Enhanced scalability and system integration for distributed environments, leveraging AWS cloud services.",
+        "Developed secure integration features, focusing on code quality and operational excellence.",
+        "Develop responsive front-end and back-end features using React.js, Framer, Tailwind CSS, Spring Boot, and MySQL and deploy and maintain applications on AWS servers.",
+        "Maintain admin, patient, and doctor portals with chat functionality between doctors and patients.",
+        "Implement a translation feature for patients from diverse language backgrounds."
+      ]
+    },
+    {
       title: "Programmer Analyst",
       company: "Cognizant Technology Solutions",
       date: "July 2021 - May 2023",
       location: "Hyderabad, India",
       description: [
-        "Developed and maintained a full-stack web application using React, jQuery, Java, Spring Boot, and SQL.",
-        "Implemented streamlined development processes, enhancing productivity by 25%."
+        "Built responsive web applications using React, Redux, and RESTful APIs, improving user engagement by 25% and reducing page load time by 40% through optimized component architecture.",
+        "Implemented CI/CD pipelines using BitBucket, Bamboo, and Jenkins, reducing deployment time by 25% and achieving 90% test automation coverage.",
+        "Developed microservices using Spring Boot and AWS (ECS, RDS, CloudWatch), supporting 50+ distributed services with 99.9% uptime and 30% improved scalability.",
+        "Collaborated with UX team to enhance user interfaces, leading to 15% higher satisfaction rates and 25% increased mobile user retention"
       ]
     },
     {
@@ -31,8 +47,9 @@ const Experience = () => {
       date: "March 2021 - July 2023",
       location: "Hyderabad, India",
       description: [
-        "Collaborated on Java, SQL, Angular, Spring Boot, JUnit, AWS, Docker projects.",
-        "Assisted managers in delivering a real-time customer service project, using insights to improve customer satisfaction by 10%."
+        "Developed scalable applications using Java Spring Boot, Angular, and AWS cloud services",
+        "Built RESTful APIs integrated with MySQL databases for high-volume data processing",
+        "Participated in agile development cycles with daily stand-ups and sprint planning"
       ]
     },
     {
@@ -41,7 +58,7 @@ const Experience = () => {
       date: "March 2020 - June 2020",
       location: "Hyderabad, India",
       description: [
-        "Led a team of 5 interns and developed a real-time Android application integrated with Firebase for COSUPS, an event management company."
+        "Led a team of 5 interns to develop a real-time Android app integrated with Firebase for an event management company and collaborated closely with stakeholders to gather requirements and deliver a user-friendly, high-performance application."
       ]
     },
     
