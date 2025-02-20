@@ -1,56 +1,54 @@
-import React from 'react';
-
-const CertificationItem = ({ certification, certifier }) => (
-  <li className="mb-2">
-    <strong>{certification}</strong> from {certifier}
-  </li>
-);
-
-const AchievementItem = ({ description }) => (
-  <li className="mb-2">{description}</li>
-);
+import { motion } from 'framer-motion';
+import data from '../data/data.json';
 
 const CertificationsAchievements = () => {
-  const certifications = [
-    { certification: "AWS Cloud Practitioner", certifier: "AWS" },
-    { certification: "Android Application Development", certifier: "Internshala" },
-    { certification: "Introduction to IoT", certifier: "Cisco Networking Academy" },
-    { certification: "Programming, Data Structures and Algorithms using Python", certifier: "NPTEL" },
-    { certification: "CCNAv7 Enterprise Networking, Security, and Automation", certifier: "Cisco Networking Academy" },
-    { certification: "CCNAv7 Switching, Routing, and Wireless Essentials", certifier: "Cisco Networking Academy" },
-    { certification: "NDG Linux", certifier: "Cisco Networking Academy" },
-    { certification: "User-Centric Computing for Human Computer Interaction", certifier: "NPTEL" },
-    { certification: "Oxford Achiever", certifier: "Oxford University Press, Oxford University" },
-    { certification: "Spanish Made Simple", certifier: "Udemy" }
-  ];
-
-  const achievements = [
-    "Resource Manager and Training Coordinator at Advanced Academic Center - Core Committee",
-    "Python and Android App Development Trainer, Student Mentor at Advanced Academic Center",
-    "Part of World Youth Council Organization Teach from Home",
-    "Achieved 2300+ Hackos in HackerRank"
-  ];
-
   return (
-    <section className="mb-12">
-      <h2 className="text-3xl font-bold mb-6">Certifications and Achievements</h2>
-      
-      <div className="mb-6">
-        <h3 className="text-2xl font-semibold mb-3">Certifications</h3>
-        <ul className="list-disc list-inside">
-          {certifications.map((cert, index) => (
-            <CertificationItem key={index} {...cert} />
-          ))}
-        </ul>
-      </div>
+    <section id="achievements" className="py-20">
+      <div className="max-w-6xl mx-auto px-4">
+        <h2 className="text-4xl font-bold text-center mb-12">
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500">
+            Certifications & Achievements
+          </span>
+        </h2>
 
-      <div>
-        <h3 className="text-2xl font-semibold mb-3">Achievements</h3>
-        <ul className="list-disc list-inside">
-          {achievements.map((achievement, index) => (
-            <AchievementItem key={index} description={achievement} />
-          ))}
-        </ul>
+        <div className="grid gap-8">
+          <div className="mb-8">
+            <h3 className="text-2xl font-bold text-white mb-6">Certifications</h3>
+            <div className="grid gap-4 md:grid-cols-2">
+              {data.certifications.map((cert, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.1 }}
+                  className="bg-gray-800 p-4 rounded-lg"
+                >
+                  <h4 className="text-lg font-semibold text-white">{cert.title}</h4>
+                  <p className="text-gray-400 text-sm mt-1">{cert.issuer}</p>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+
+          <div>
+            <h3 className="text-2xl font-bold text-white mb-6">Achievements</h3>
+            <div className="grid gap-4">
+              {data.achievements.map((achievement, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, x: -20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.1 }}
+                  className="bg-gray-800 p-4 rounded-lg"
+                >
+                  <p className="text-gray-300">{achievement}</p>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );

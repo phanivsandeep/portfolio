@@ -1,61 +1,44 @@
-import React from 'react';
-
-const SkillCategory = ({ category, skills }) => (
-  <div className="mb-4">
-    <h3 className="text-xl font-semibold mb-2">{category}</h3>
-    <p className="text-gray-700">{skills.join(', ')}</p>
-  </div>
-);
+import { motion } from 'framer-motion';
+import data from '../data/data.json';
 
 const Skills = () => {
-  const skillCategories = [
-    {
-      category: "Languages",
-      skills: [
-        "Python", "Java", "JavaScript", "SQL", "C", "C++", "C#", "Bash", "Swift", "Kotlin", 
-        "NoSQL", "HTML/CSS", "PHP"
-      ]
-    },
-    {
-      category: "Frameworks",
-      skills: [
-        "TensorFlow", "PyTorch", "React", "Node.js", "Angular", ".NET", "SpringBoot", 
-        "Django", "Flask", "JUnit", "Maven", "BootStrap", "JQuery", "RestAPI"
-      ]
-    },
-    {
-      category: "Databases",
-      skills: [
-        "MySQL", "PostgreSQL", "MongoDB", "Oracle", "SQL Server"
-      ]
-    },
-    {
-      category: "Tools",
-      skills: [
-        "Git", "Docker", "Kubernetes", "AWS", "Azure", "GCP", "Jenkins", "Terraform", 
-        "JIRA", "Visual Studio Code", "Eclipse", "VMware", "Azure DevOps", "Tableau", 
-        "PowerBI", "Android Studio", "XCode", "Unreal Engine", "Unity"
-      ]
-    },
-    {
-      category: "Concepts",
-      skills: [
-        "Machine Learning", "Cloud Computing", "Microservices", "CI/CD", "DevOps", 
-        "Data Analytics", "RESTful APIs", "Agile Methodologies", "System Design", 
-        "Security Protocols", "Deep Learning", "Computer Vision"
-      ]
-    },
-    
-  ];
-
   return (
-    <section className="mb-12">
-      <h2 className="text-3xl font-bold mb-6">Skills</h2>
-      {skillCategories.map((category, index) => (
-        <SkillCategory key={index} {...category} />
-      ))}
+    <section id="skills" className="py-20">
+      <div className="max-w-6xl mx-auto px-4">
+        <h2 className="text-4xl font-bold text-center mb-12">
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500">
+            Skills & Technologies
+          </span>
+        </h2>
+        
+        <div className="grid gap-8">
+          {Object.entries(data.skills).map(([category, skills]) => (
+            <motion.div
+              key={category}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="mb-8"
+            >
+              <h3 className="text-2xl font-semibold mb-4 capitalize">
+                {category}
+              </h3>
+              <div className="flex flex-wrap gap-3">
+                {skills.map((skill) => (
+                  <span
+                    key={skill}
+                    className="bg-gray-800 px-4 py-2 rounded-full text-sm hover:bg-gray-700 transition-colors"
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </div>
     </section>
   );
 };
 
-export default Skills;
+export default Skills

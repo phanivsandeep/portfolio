@@ -1,0 +1,225 @@
+{
+    "personalInfo": {
+      "name": "Phani Visweswara Sandeep Chodavarapu",
+      "phone": "716-612-0738",
+      "email": "phanisandeepchodavarapu@gmail.com",
+      "links": {
+        "linkedin": "https://linkedin.com/in/phanivsandeep",
+        "github": "https://github.com/phanivsandeep",
+        "portfolio": "https://phanivsandeep.github.io/portfolio"
+      }
+    },
+    "skills": {
+      "languages": [
+        "Python", "Java", "JavaScript", "TypeScript", "SQL", "C++", "C#", "Go", "Rust", 
+        "HTML/CSS", "Bash", "Kotlin"
+      ],
+      "frameworks": [
+        "React", "Angular", "Node.js", "Spring Boot", "FastAPI", "Express.js", "Next.js",
+        "NestJS", "Django", "Flask", "Jest", "JUnit", "Mockito", "Maven", "Bootstrap",
+        "Tailwind CSS", "jQuery", "GraphQL", "gRPC", "RestAPI"
+      ],
+      "databases": [
+        "MySQL", "PostgreSQL", "MongoDB", "Redis", "Apache Kafka", "RabbitMQ",
+        "Elasticsearch", "Cassandra", "Splunk"
+      ],
+      "cloud": [
+        "AWS EC2", "ECS", "EKS", "Lambda", "S3", "RDS", "DynamoDB", "CloudFront",
+        "Route53", "VPC", "IAM", "CloudWatch", "SNS", "SQS", "API Gateway", "Cognito"
+      ],
+      "tools": [
+        "Docker", "Kubernetes", "GitHub Actions", "Terraform", "Jenkins", "Git", "GitHub",
+        "BitBucket", "JIRA", "Confluence", "SonarQube", "Datadog", "New Relic"
+      ]
+    },
+    "experiences": [
+      {
+        "id": 1,
+        "title": "Full Stack Web Developer(Co-op)",
+        "company": "Kaleida Health",
+        "location": "Buffalo, New York",
+        "type": "Full-time",
+        "current": true,
+        "duration": "August 2024 - Present",
+        "responsibilities": [
+          "Designed and deployed multi-tiered applications with high availability and fault-tolerant features on AWS",
+          "Enhanced scalability and system integration for distributed environments, leveraging AWS cloud services",
+          "Developed secure integration features, focusing on code quality and operational excellence",
+          "Develop responsive front-end and back-end features using React.js, Framer, Tailwind CSS, Spring Boot, and MySQL and deploy and maintain applications on AWS servers",
+          "Maintain admin, patient, and doctor portals with chat functionality between doctors and patients",
+          "Implement a translation feature for patients from diverse language backgrounds"
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Programmer Analyst",
+        "company": "Cognizant Technology Solutions",
+        "location": "Hyderabad, India",
+        "type": "Full-time",
+        "duration": "July 2021 - May 2023",
+        "responsibilities": [
+          "Built responsive web applications using React, Redux, and RESTful APIs, improving user engagement by 25% and reducing page load time by 40% through optimized component architecture",
+          "Implemented CI/CD pipelines using BitBucket, Bamboo, and Jenkins, reducing deployment time by 25% and achieving 90% test automation coverage",
+          "Developed microservices using Spring Boot and AWS (ECS, RDS, CloudWatch), supporting 50+ distributed services with 99.9% uptime and 30% improved scalability",
+          "Collaborated with UX team to enhance user interfaces, leading to 15% higher satisfaction rates and 25% increased mobile user retention"
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Programmer Analyst Trainee",
+        "company": "Cognizant Technology Solutions",
+        "location": "Hyderabad, India",
+        "type": "Full-time",
+        "duration": "March 2021 - July 2023",
+        "responsibilities": [
+          "Developed scalable applications using Java Spring Boot, Angular, and AWS cloud services",
+          "Built RESTful APIs integrated with MySQL databases for high-volume data processing",
+          "Participated in agile development cycles with daily stand-ups and sprint planning"
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Application Development Intern",
+        "company": "COSUPS",
+        "location": "Hyderabad, India",
+        "type": "Internship",
+        "duration": "March 2020 - June 2020",
+        "responsibilities": [
+          "Led a team of 5 interns to develop a real-time Android app integrated with Firebase for an event management company",
+          "Collaborated closely with stakeholders to gather requirements and deliver a user-friendly, high-performance application"
+        ]
+      }
+    ],
+        "projects": [
+          {
+            "id": 1,
+            "title": "Historical Document Translation and Restoration",
+            "technologies": ["Python", "PyTesseract", "Helsinki-NLP", "OpenCV"],
+            "points": [
+              "Developed an end-to-end pipeline for translating and restoring historical documents, leveraging PyTesseract for OCR, Helsinki-NLP for translation, and OpenCV for image inpainting",
+              "Engineered a solution to maintain the visual integrity of historical documents post-translation by accurately matching the original font style, size, and layout using custom bounding box algorithms",
+              "Optimized text extraction and translation processes, achieving reliable text conversion while preserving document aesthetics",
+              "Implemented advanced image processing techniques, including contour detection and font estimation, ensuring computational efficiency and scalability of the application",
+              "Fine-tuned pre-trained models for OCR and translation, enhancing accuracy and adaptability for historical datasets, contributing to improved data accessibility and preservation"
+            ]
+          },
+          {
+            "id": 2,
+            "title": "Real-time Twitter Sentiment Analysis",
+            "technologies": ["PyTorch", "Flask", "React", "AWS S3"],
+            "points": [
+              "Architected a scalable sentiment analysis application using LSTM, BiLSTM, and GRU, achieving model accuracies of 75%, 70%, and 78%, respectively",
+              "Developed a full-stack pipeline with Flask and React, integrating the Twitter API for real-time data retrieval and sentiment prediction",
+              "Deployed the application on AWS S3, ensuring high availability and enabling seamless scaling to handle increased user demand"
+            ]
+          },
+          {
+            "id": 3,
+            "title": "E-commerce Shopping Database",
+            "technologies": ["PostgreSQL", "Streamlit", "AWS RDS", "Python", "psycopg2"],
+            "points": [
+              "Engineered a robust e-commerce database architecture using PostgreSQL, hosted on AWS RDS to ensure reliability and scalability with 99.9% uptime",
+              "Developed and integrated a Streamlit-based front end, facilitating secure and efficient CRUD operations, enhancing database interaction speed by 40%",
+              "Implemented ACID principles and advanced security protocols, significantly reducing data vulnerability and ensuring transactional integrity"
+            ]
+          },
+          {
+            "id": 4,
+            "title": "Mail Order Pharmacy",
+            "technologies": ["Angular", "Springboot", "Mockito", "MySQL"],
+            "points": [
+              "Built and architected a secure and reliable mail order pharmacy application using MySQL, Angular, SpringBoot",
+              "Integrated with payment processing systems and shipping carriers to automate 80% of order fulfillment process, reducing processing time by 25%"
+            ]
+          },
+          {
+            "id": 5,
+            "title": "Road Obstacle Detection",
+            "technologies": ["Python", "OpenCV", "YOLO", "SciKitLearn"],
+            "points": [
+              "Created YOLO-based model for real-time road obstacle detection (e.g., potholes, cones, pedestrians) achieving 83% accuracy in testing"
+            ]
+          },
+          {
+            "id": 6,
+            "title": "Smart Attendance",
+            "technologies": ["Java", "Firebase", "Python", "Android Studio"],
+            "points": [
+              "Constructed a highly accurate and consistent attendance-marking application, checks schedules and GPS ranges to eliminate location based attendance errors by 90%",
+              "Register students and instructors by MAC address to ensure accurate attendance marking and eliminate network spoofed attendance errors by 90%"
+            ]
+          },
+          {
+            "id": 7,
+            "title": "Tracking Speed of Vehicles",
+            "technologies": ["Java", "Firebase", "Android Studio"],
+            "points": [
+              "Engineered a camera-based checkpoint system, reducing hardware and infrastructure costs by 50%, to capture vehicle timestamps efficiently",
+              "Accomplished a 50% cost reduction by utilizing checkpoint timestamps to calculate vehicle speeds, enhancing traffic monitoring and road safety"
+            ]
+          }
+        ],
+    "certifications": [
+      {
+        "id": 1,
+        "title": "AWS Cloud Practitioner",
+        "issuer": "AWS"
+      },
+      {
+        "id": 2,
+        "title": "Android Application Development",
+        "issuer": "Internshala"
+      },
+      {
+        "id": 3,
+        "title": "Introduction to IoT",
+        "issuer": "Cisco Networking Academy"
+      },
+      {
+        "id": 4,
+        "title": "Programming, Data Structures and Algorithms using Python",
+        "issuer": "NPTEL"
+      },
+      {
+        "id": 5,
+        "title": "CCNAv7 Enterprise Networking, Security, and Automation",
+        "issuer": "Cisco Networking Academy"
+      },
+      {
+        "id": 6,
+        "title": "CCNAv7 Switching, Routing, and Wireless Essentials",
+        "issuer": "Cisco Networking Academy"
+      },
+      {
+        "id": 7,
+        "title": "NDG Linux",
+        "issuer": "Cisco Networking Academy"
+      },
+      {
+        "id": 8,
+        "title": "User-Centric Computing for Human Computer Interaction",
+        "issuer": "NPTEL"
+      },
+      {
+        "id": 9,
+        "title": "Oxford Achiever",
+        "issuer": "Oxford University Press, Oxford University"
+      },
+      {
+        "id": 10,
+        "title": "Spanish Made Simple",
+        "issuer": "Udemy"
+      }
+    ],
+    "achievements": [
+      "Resource Manager and Training Coordinator at Advanced Academic Center - Core Committee",
+      "Python and Android App Development Trainer, Student Mentor at Advanced Academic Center",
+      "Part of World Youth Council Organization Teach from Home",
+      "Achieved 2300+ Hackos in HackerRank"
+    ],
+    "education": {
+      "degree": "Master of Science, Computer Science",
+      "university": "University at Buffalo, The State University of New York",
+      "gradDate": "Jan 2025"
+    }
+  }
