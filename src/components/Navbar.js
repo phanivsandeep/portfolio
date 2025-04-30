@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Download, Phone, Mail, Linkedin, Github, Menu, X } from 'lucide-react';
+import { Download, Phone, Mail, Linkedin, Code, Menu, X } from 'lucide-react';
 import icon from "../assets/pvs_pic.ico";
 
 const Navbar = () => {
@@ -51,7 +51,7 @@ const Navbar = () => {
             { icon: Phone, href: 'tel:+17166120738', tooltip: 'Call Me' },
             { icon: Mail, href: 'mailto:phanisandeepchodavarapu@gmail.com', tooltip: 'Email Me' },
             { icon: Linkedin, href: 'https://linkedin.com/in/phanivsandeep', tooltip: 'LinkedIn' },
-            { icon: Github, href: 'https://github.com/phanivsandeep', tooltip: 'GitHub' }
+            { icon: Code, href: 'https://leetcode.com/u/phanivsandeep', tooltip: 'LeetCode' }
           ].map((item, index) => (
             <div key={index} className="relative group">
               <a              
@@ -101,9 +101,9 @@ const Navbar = () => {
             {[
               { icon: Download, href: 'https://raw.githubusercontent.com/phanivsandeep/portfolio/main/public/resume.pdf', download: true },
               { icon: Phone, href: 'tel:+17166120738' },
-              { icon: Mail, href: 'mailto:phanivis@buffalo.edu' },
+              { icon: Mail, href: 'mailto:phanisandeepchodavarapu@gmail.com' },
               { icon: Linkedin, href: 'https://linkedin.com/in/phanivsandeep' },
-              { icon: Github, href: 'https://github.com/phanivsandeep' }
+              { icon: Code, href: 'https://leetcode.com/u/phanivsandeep' }
             ].map((item, index) => (
               <a
                 key={index}
@@ -123,4 +123,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar
+export default Navbar;

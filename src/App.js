@@ -9,8 +9,16 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import CursorTrail from './components/CursorTrail';
 import Education from './components/Education';
+import ReactGA from 'react-ga';
+import React,{useEffect} from 'react';
+
 
 function App() {
+  useEffect(() => {
+    ReactGA.initialize('G-DK4VLPVF3M');
+    ReactGA.pageview(window.location.pathname + window.location.search)
+    },[]);
+
   return (
     <div className="min-h-screen relative bg-[#0a0a0a]">
       <CursorTrail />

@@ -6,48 +6,53 @@
       "links": {
         "linkedin": "https://linkedin.com/in/phanivsandeep",
         "github": "https://github.com/phanivsandeep",
-        "portfolio": "https://phanivsandeep.github.io/portfolio"
+        "portfolio": "https://phanivsandeep.github.io/portfolio",
+        "leetcode": "https://leetcode.com/u/phanivsandeep/"
       }
     },
     "skills": {
-      "languages": [
-        "Python", "Java", "JavaScript", "TypeScript", "SQL", "C++", "C#", "Go", "Rust", 
-        "HTML/CSS", "Bash", "Kotlin"
-      ],
-      "frameworks": [
-        "React", "Angular", "Node.js", "Spring Boot", "FastAPI", "Express.js", "Next.js",
-        "NestJS", "Django", "Flask", "Jest", "JUnit", "Mockito", "Maven", "Bootstrap",
-        "Tailwind CSS", "jQuery", "GraphQL", "gRPC", "RestAPI"
-      ],
-      "databases": [
-        "MySQL", "PostgreSQL", "MongoDB", "Redis", "Apache Kafka", "RabbitMQ",
-        "Elasticsearch", "Cassandra", "Splunk"
-      ],
-      "cloud": [
-        "AWS EC2", "ECS", "EKS", "Lambda", "S3", "RDS", "DynamoDB", "CloudFront",
-        "Route53", "VPC", "IAM", "CloudWatch", "SNS", "SQS", "API Gateway", "Cognito"
-      ],
-      "tools": [
-        "Docker", "Kubernetes", "GitHub Actions", "Terraform", "Jenkins", "Git", "GitHub",
-        "BitBucket", "JIRA", "Confluence", "SonarQube", "Datadog", "New Relic"
-      ]
-    },
+    "languages": [
+      "Python", "Java", "JavaScript", "TypeScript", "SQL", "C++", "HTML5", "CSS3", "PHP"
+    ],
+    "frameworks": [
+      "React", "Angular", "Express", "NodeJS", "GraphQL", "Spring Boot", "FastAPI", 
+      "Bootstrap", "Tailwind", "Django", "Hibernate", "LangChain", "Jest", "Mockito", "PyTest"
+    ],
+    "databases": [
+      "PostgreSQL", "MySQL", "MongoDB", "Redis", "Kafka", "RabbitMQ", "Oracle PL/SQL",
+      "Snowflake", "SQLAlchemy", "Redux"
+    ],
+    "cloud": [
+      "AWS EC2", "ECS", "S3", "RDS", "CloudWatch", "Lambda", "Cognito", "CodeBuild", 
+      "SNS", "SQS", "VPC", "AWS Amplify", "CloudFront", "EKS", "GCP Cloud Run", 
+      "GCP Cloud Build", "GCP Cloud Deploy", "GCP Cloud Storage", "GCP Pub/Sub", 
+      "GCP Cloud Functions"
+    ],
+    "tools": [
+      "Git", "GitHub", "JIRA", "SonarQube", "VMware", "VS Code", "Postman", "Cursor", 
+      "Tableau", "Docker", "Kubernetes", "GitHub Actions", "HuggingFace", "BioBERT", 
+      "OpenCV", "PyTesseract"
+    ]
+  },
     "experiences": [
       {
         "id": 1,
-        "title": "Full Stack Web Developer(Co-op)",
+        "title": "Software Engineer",
         "company": "Kaleida Health",
         "location": "Buffalo, New York",
         "type": "Full-time",
         "current": true,
-        "duration": "August 2024 - Present",
+        "duration": "August 2024 - December 2024",
         "responsibilities": [
           "Designed and deployed multi-tiered applications with high availability and fault-tolerant features on AWS",
           "Enhanced scalability and system integration for distributed environments, leveraging AWS cloud services",
           "Developed secure integration features, focusing on code quality and operational excellence",
           "Develop responsive front-end and back-end features using React.js, Framer, Tailwind CSS, Spring Boot, and MySQL and deploy and maintain applications on AWS servers",
           "Maintain admin, patient, and doctor portals with chat functionality between doctors and patients",
-          "Implement a translation feature for patients from diverse language backgrounds"
+          "Implement a translation feature for patients from diverse language backgrounds",
+          "Engineered a HIPAA-compliant, AI-powered medical chatbot using Gemini model and RAG, with VectorDB for storing embeddings and collections",
+          "Developed a microservice architecture for the chatbot with React.js/Tailwind frontend and FastAPI backend with PostgreSQL",
+          "Deployed the chatbot solution on HuggingFace Spaces and implemented PyTest to ensure reliable API endpoint functionality"
         ]
       },
       {
@@ -90,123 +95,128 @@
         ]
       }
     ],
-        "projects": [
-          {
-            "id": 1,
-            "title": "Historical Document Translation and Restoration",
-            "technologies": ["Python", "PyTesseract", "Helsinki-NLP", "OpenCV"],
-            "points": [
-              "Developed an end-to-end pipeline for translating and restoring historical documents, leveraging PyTesseract for OCR, Helsinki-NLP for translation, and OpenCV for image inpainting",
-              "Engineered a solution to maintain the visual integrity of historical documents post-translation by accurately matching the original font style, size, and layout using custom bounding box algorithms",
-              "Optimized text extraction and translation processes, achieving reliable text conversion while preserving document aesthetics",
-              "Implemented advanced image processing techniques, including contour detection and font estimation, ensuring computational efficiency and scalability of the application",
-              "Fine-tuned pre-trained models for OCR and translation, enhancing accuracy and adaptability for historical datasets, contributing to improved data accessibility and preservation"
-            ]
-          },
-          {
-            "id": 2,
-            "title": "Real-time Twitter Sentiment Analysis",
-            "technologies": ["PyTorch", "Flask", "React", "AWS S3"],
-            "points": [
-              "Architected a scalable sentiment analysis application using LSTM, BiLSTM, and GRU, achieving model accuracies of 75%, 70%, and 78%, respectively",
-              "Developed a full-stack pipeline with Flask and React, integrating the Twitter API for real-time data retrieval and sentiment prediction",
-              "Deployed the application on AWS S3, ensuring high availability and enabling seamless scaling to handle increased user demand"
-            ]
-          },
-          {
-            "id": 3,
-            "title": "E-commerce Shopping Database",
-            "technologies": ["PostgreSQL", "Streamlit", "AWS RDS", "Python", "psycopg2"],
-            "points": [
-              "Engineered a robust e-commerce database architecture using PostgreSQL, hosted on AWS RDS to ensure reliability and scalability with 99.9% uptime",
-              "Developed and integrated a Streamlit-based front end, facilitating secure and efficient CRUD operations, enhancing database interaction speed by 40%",
-              "Implemented ACID principles and advanced security protocols, significantly reducing data vulnerability and ensuring transactional integrity"
-            ]
-          },
-          {
-            "id": 4,
-            "title": "Mail Order Pharmacy",
-            "technologies": ["Angular", "Springboot", "Mockito", "MySQL"],
-            "points": [
-              "Built and architected a secure and reliable mail order pharmacy application using MySQL, Angular, SpringBoot",
-              "Integrated with payment processing systems and shipping carriers to automate 80% of order fulfillment process, reducing processing time by 25%"
-            ]
-          },
-          {
-            "id": 5,
-            "title": "Road Obstacle Detection",
-            "technologies": ["Python", "OpenCV", "YOLO", "SciKitLearn"],
-            "points": [
-              "Created YOLO-based model for real-time road obstacle detection (e.g., potholes, cones, pedestrians) achieving 83% accuracy in testing"
-            ]
-          },
-          {
-            "id": 6,
-            "title": "Smart Attendance",
-            "technologies": ["Java", "Firebase", "Python", "Android Studio"],
-            "points": [
-              "Constructed a highly accurate and consistent attendance-marking application, checks schedules and GPS ranges to eliminate location based attendance errors by 90%",
-              "Register students and instructors by MAC address to ensure accurate attendance marking and eliminate network spoofed attendance errors by 90%"
-            ]
-          },
-          {
-            "id": 7,
-            "title": "Tracking Speed of Vehicles",
-            "technologies": ["Java", "Firebase", "Android Studio"],
-            "points": [
-              "Engineered a camera-based checkpoint system, reducing hardware and infrastructure costs by 50%, to capture vehicle timestamps efficiently",
-              "Accomplished a 50% cost reduction by utilizing checkpoint timestamps to calculate vehicle speeds, enhancing traffic monitoring and road safety"
-            ]
-          }
-        ],
+      "projects": [
+  {
+    "title": "SnipSpace",
+    "technologies": ["React", "Supabase", "Tailwind CSS"],
+    "link": "https://snipspace.vercel.app/",
+    "points": [
+      "Pioneered a serverless Universal Clipboard solution using React and Supabase, revolutionizing content sharing across multiple platforms with zero configuration",
+      "Implemented real-time data synchronization using Supabase's Realtime functionality, enabling clipboard updates across devices",
+      "Developed a secure solution with user authentication, ensuring clipboard content remains private during transmission and storage",
+      "Created an intuitive user interface with Tailwind CSS providing seamless cross-platform compatibility"
+    ]
+  },
+  {
+    "title": "Historical Document Translation and Restoration",
+    "technologies": ["Python", "PyTesseract", "Helsinki-NLP", "OpenCV"],
+    "link": "https://github.com/phanivsandeep/HistoricalDocumentTranslation",
+    "points": [
+      "Developed an end-to-end pipeline for translating and restoring historical documents, leveraging PyTesseract for OCR, Helsinki-NLP for translation, and OpenCV for image inpainting",
+      "Engineered a solution to maintain the visual integrity of historical documents post-translation by accurately matching the original font style, size, and layout using custom bounding box algorithms",
+      "Optimized text extraction and translation processes, achieving reliable text conversion while preserving document aesthetics",
+      "Implemented advanced image processing techniques, including contour detection and font estimation, ensuring computational efficiency and scalability of the application",
+      "Fine-tuned pre-trained models for OCR and translation, enhancing accuracy and adaptability for historical datasets, contributing to improved data accessibility and preservation"
+    ]
+  },
+  {
+    "title": "Real-time Twitter Sentiment Analysis",
+    "technologies": ["PyTorch", "Flask", "React", "AWS S3"],
+    "link": "https://github.com/phanivsandeep/sentimentAnalysis",
+    "points": [
+      "Architected a scalable sentiment analysis application using LSTM, BiLSTM, and GRU, achieving model accuracies of 75%, 70%, and 78%, respectively",
+      "Developed a full-stack pipeline with Flask and React, integrating the Twitter API for real-time data retrieval and sentiment prediction",
+      "Deployed the application on AWS S3, ensuring high availability and enabling seamless scaling to handle increased user demand"
+    ]
+  },
+  {
+    "title": "E-commerce Shopping Database",
+    "technologies": ["PostgreSQL", "Streamlit", "AWS RDS", "Python", "psycopg2"],
+    "link": "",
+    "points": [
+      "Engineered a robust e-commerce database architecture using PostgreSQL, hosted on AWS RDS to ensure reliability and scalability with 99.9% uptime",
+      "Developed and integrated a Streamlit-based front end, facilitating secure and efficient CRUD operations, enhancing database interaction speed by 40%",
+      "Implemented ACID principles and advanced security protocols, significantly reducing data vulnerability and ensuring transactional integrity"
+    ]
+  },
+  {
+    "title": "Mail Order Pharmacy",
+    "technologies": ["Angular", "Springboot", "Mockito", "MySQL"],
+    "link": "",
+    "points": [
+      "Built and architected a secure and reliable mail order pharmacy application using MySQL, Angular, SpringBoot",
+      "Integrated with payment processing systems and shipping carriers to automate 80% of order fulfillment process, reducing processing time by 25%"
+    ]
+  },
+  {
+    "title": "Road Obstacle Detection",
+    "technologies": ["Python", "OpenCV", "YOLO", "SciKitLearn"],
+    "link": "",
+    "points": [
+      "Created YOLO-based model for real-time road obstacle detection (e.g., potholes, cones, pedestrians) achieving 83% accuracy in testing"
+    ]
+  },
+  {
+    "title": "Smart Attendance",
+    "technologies": ["Java", "Firebase", "Python", "Android Studio"],
+    "link": "",  
+    "points": [
+      "Constructed a highly accurate and consistent attendance-marking application, checks schedules and GPS ranges to eliminate location based attendance errors by 90%",
+      "Register students and instructors by MAC address to ensure accurate attendance marking and eliminate network spoofed attendance errors by 90%"
+    ]
+  },
+  {
+    "title": "Tracking Speed of Vehicles",
+    "technologies": ["Java", "Firebase", "Android Studio"],
+    "link": "https://github.com/phanivsandeep/Tracking_speed_of_vehicles",
+    "points": [
+      "Engineered a camera-based checkpoint system, reducing hardware and infrastructure costs by 50%, to capture vehicle timestamps efficiently",
+      "Accomplished a 50% cost reduction by utilizing checkpoint timestamps to calculate vehicle speeds, enhancing traffic monitoring and road safety"
+    ]
+  }
+],
     "certifications": [
       {
-        "id": 1,
-        "title": "AWS Cloud Practitioner",
+        "title": "AWS Certified - Solutions Architect Associate",
         "issuer": "AWS"
       },
       {
-        "id": 2,
-        "title": "Android Application Development",
+        "title": "AWS Certified - Cloud Practitioner",
+        "issuer": "AWS"
+      },
+      {
+         "title": "Android Application Development",
         "issuer": "Internshala"
       },
       {
-        "id": 3,
         "title": "Introduction to IoT",
         "issuer": "Cisco Networking Academy"
       },
       {
-        "id": 4,
         "title": "Programming, Data Structures and Algorithms using Python",
         "issuer": "NPTEL"
       },
       {
-        "id": 5,
         "title": "CCNAv7 Enterprise Networking, Security, and Automation",
         "issuer": "Cisco Networking Academy"
       },
       {
-        "id": 6,
         "title": "CCNAv7 Switching, Routing, and Wireless Essentials",
         "issuer": "Cisco Networking Academy"
       },
       {
-        "id": 7,
         "title": "NDG Linux",
         "issuer": "Cisco Networking Academy"
       },
       {
-        "id": 8,
         "title": "User-Centric Computing for Human Computer Interaction",
         "issuer": "NPTEL"
       },
       {
-        "id": 9,
         "title": "Oxford Achiever",
         "issuer": "Oxford University Press, Oxford University"
       },
       {
-        "id": 10,
         "title": "Spanish Made Simple",
         "issuer": "Udemy"
       }

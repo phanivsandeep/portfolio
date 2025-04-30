@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { ExternalLink } from 'lucide-react';
 import data from '../data/data.json';
 
 const Projects = () => {
@@ -12,15 +13,28 @@ const Projects = () => {
         </h2>
 
         <div className="grid grid-cols-1 gap-8">
-          {data.projects.map((project) => (
+          {data.projects.map((project, idx) => (
             <motion.div
-              key={project.id}
+              key={idx}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               className="bg-gray-800 rounded-lg p-6"
             >
-              <h3 className="text-xl font-bold mb-3">{project.title}</h3>
+              {project.link ? (
+                <a 
+                  href={project.link} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 mb-3 group"
+                  aria-label={`Visit ${project.title} project`}
+                >
+                  <h3 className="text-xl font-bold group-hover:text-blue-500 transition-colors duration-300">{project.title}</h3>
+                  <ExternalLink size={18} className="text-gray-400 group-hover:text-blue-500 transition-colors duration-300" />
+                </a>
+              ) : (
+                <h3 className="text-xl font-bold mb-3">{project.title}</h3>
+              )}
               <div className="flex flex-wrap gap-2 mb-4">
                 {project.technologies.map((tech) => (
                   <span
@@ -44,4 +58,4 @@ const Projects = () => {
   );
 };
 
-export default Projects
+export default Projects;

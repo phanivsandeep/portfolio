@@ -66,7 +66,7 @@ const Hero = () => {
     }, 8000); // Increased time to allow for letter animation
   
     return () => clearInterval(interval);
-  }, []);
+  }, [taglines.length]);
   return (
     <section className="h-screen flex items-center justify-center">
       <div className="container mx-auto px-4">
@@ -96,7 +96,7 @@ const Hero = () => {
               </AnimatePresence>
               
               <p className="text-gray-400 text-lg">
-                Computer Science graduate with 2+ years of expertise in crafting scalable web applications 
+                Computer Science graduate with 3+ years of expertise in crafting scalable web applications 
                 and AI solutions. Passionate about optimizing backend architecture and creating engaging frontend experiences.
               </p>
               
@@ -125,47 +125,80 @@ const Hero = () => {
             transition={{ duration: 0.8 }}
             className="hidden md:flex justify-center items-center"
           >
-            <div className="relative w-64 h-64 flex items-center justify-center">
-              {stackIcons.map((Icon, index) => {
-                const angle = (index * 360) / stackIcons.length;
-                const radius = 120;
-                const x = Math.cos((angle * Math.PI) / 180) * radius;
-                const y = Math.sin((angle * Math.PI) / 180) * radius;
+    <div className="relative w-64 h-64 flex items-center justify-center">
+  {stackIcons.map((Icon, index) => {
+    const totalIcons = stackIcons.length;
+    // Calculate starting angle for each icon (evenly distributed)
+    const startAngle = (index * (360 / totalIcons));
+    const radius = 120;
+    
+    return (
+      <motion.div
+        key={index}
+        className={`absolute ${Icon.color}`}
+        initial={{ opacity: 0, scale: 0 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ 
+          duration: 0.5,
+          delay: index * 0.1
+        }}
+      >
+        {/* Create a rotating container centered at the origin */}
+        <motion.div
+          animate={{
+            rotate: [0, 360],
+          }}
+          transition={{
+            duration: 20,
+            repeat: Infinity,
+            repeatType: "loop",
+            ease: "linear"
+          }}
+          style={{
+            position: "absolute",
+            transformOrigin: "0 0"
+          }}
+        >
+          {/* Position each icon at the fixed radius along its angle */}
+          <motion.div
+            style={{
+              position: "absolute",
+              left: `${Math.cos((startAngle * Math.PI) / 180) * radius}px`,
+              top: `${Math.sin((startAngle * Math.PI) / 180) * radius}px`,
+              transform: "translate(-50%, -50%)" // Center the icon on its position
+            }}
+          >
+            {/* This motion.div handles the icon's self-rotation (spinning) */}
+            <motion.div
+              animate={{ rotate: [0, 360] }}
+              transition={{
+                duration: 8,
+                repeat: Infinity,
+                repeatType: "loop",
+                ease: "linear"
+              }}
+            >
+              <Icon.icon size={40} />
+            </motion.div>
+          </motion.div>
+        </motion.div>
+      </motion.div>
+    );
+  })}
 
-                return (
-                  <motion.div
-                    key={index}
-                    className={`absolute ${Icon.color}`}
-                    initial={{ opacity: 0, scale: 0 }}
-                    animate={{ 
-                      opacity: 1, 
-                      scale: 1,
-                      x,
-                      y
-                    }}
-                    transition={{ 
-                      duration: 0.5,
-                      delay: index * 0.1
-                    }}
-                  >
-                    <Icon.icon size={40} />
-                  </motion.div>
-                );
-              })}
-
-              <motion.div 
-                className="w-32 h-32 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-full"
-                animate={{ 
-                  scale: [1, 1.1, 1],
-                  rotate: [0, 360]
-                }}
-                transition={{ 
-                  duration: 8,
-                  repeat: Infinity,
-                  repeatType: "loop"
-                }}
-              />
-            </div>
+  <motion.div 
+    className="w-32 h-32 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-full"
+    animate={{ 
+      scale: [1, 1.1, 1],
+      rotate: [0, 360]
+    }}
+    transition={{ 
+      duration: 8,
+      repeat: Infinity,
+      repeatType: "loop"
+    }}
+  />
+</div>
           </motion.div>
         </div>
 

@@ -1,17 +1,18 @@
 import React from 'react';
-import { Mail, Phone, Linkedin, Github, Instagram, Facebook, Gamepad2 } from 'lucide-react';
+import { Mail, Phone, Linkedin, Github, Instagram, Facebook, Gamepad2, Code } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    { icon: Mail, href: 'mailto:phanivis@buffalo.edu', text: 'phanivis@buffalo.edu' },
+    { icon: Mail, href: 'mailto:phanisandeepchodavarapu@gmail.com', text: 'phanisandeepchodavarapu@gmail.com' },
     { icon: Phone, href: 'tel:+17166120738', text: '+1 (716)-612-0738' },
-    { icon: Linkedin, href: 'https://www.linkedin.com/in/phanivsandeep', text: 'phanivsandeep' },
-    { icon: Github, href: 'https://github.com/phanivsandeep', text: 'phanivsandeep' },
-    { icon: Instagram, href: 'https://www.instagram.com/phanivsandeep', text: 'phanivsandeep' },
-    { icon: Facebook, href: 'https://www.facebook.com/chodavarapu.phanisandeep/', text: 'Phani Sandeep' },
-    { icon: Gamepad2, href: 'https://steamcommunity.com/id/phanivsandeep/', text: 'phanisandeep29' }
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/phanivsandeep', text: 'phanivsandeep LinkedIn' },
+    { icon: Github, href: 'https://github.com/phanivsandeep', text: 'phanivsandeep Github' },
+    { icon: Instagram, href: 'https://www.instagram.com/phanivsandeep', text: 'phanivsandeep Instagram' },
+    { icon: Facebook, href: 'https://www.facebook.com/chodavarapu.phanisandeep/', text: 'Phani Sandeep Facebook' },
+    { icon: Gamepad2, href: 'https://steamcommunity.com/id/phanivsandeep/', text: 'phanisandeep29 Steam' },
+    { icon: Code, href: 'https://leetcode.com/u/phanivsandeep', text: 'phanivsandeep Leetcode' }
   ];
 
   return (

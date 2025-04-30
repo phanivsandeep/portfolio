@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import { Mail, Phone, Linkedin, Github } from 'lucide-react';
 import emailjs from '@emailjs/browser';
 import { useState } from 'react';
 
@@ -7,6 +6,7 @@ const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
+    subject: '',
     message: ''
   });
   const [status, setStatus] = useState('');
@@ -17,17 +17,18 @@ const Contact = () => {
 
     emailjs.send(
       'service_portfolio', 
-      'template_tsdfde4', 
+      'template_nxerzmw', 
       {
         from_name: formData.name,
         from_email: formData.email,
+        subject: formData.subject,
         message: formData.message,
       },
       'EtGyAn2me1e7AEBrQ'
     )
       .then(() => {
         setStatus('success');
-        setFormData({ name: '', email: '', message: '' });
+        setFormData({ name: '', email: '', subject: '', message: '' });
         setTimeout(() => setStatus(''), 3000);
       })
       .catch((error) => {
@@ -77,6 +78,17 @@ const Contact = () => {
                 type="email"
                 id="email"
                 value={formData.email}
+                onChange={handleChange}
+                required
+                className="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-2 text-white focus:outline-none focus:border-blue-500"
+              />
+            </div>
+            <div>
+              <label htmlFor="subject" className="block text-gray-300 mb-2">Subject</label>
+              <input
+                type="text"
+                id="subject"
+                value={formData.subject}
                 onChange={handleChange}
                 required
                 className="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-2 text-white focus:outline-none focus:border-blue-500"
